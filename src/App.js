@@ -24,7 +24,7 @@ function App() {
       dispatch(getActiveUser());
     }
   }, 
-  []);
+  [dispatch, isAuthenticated]);
 
   return (
     <div className="App">

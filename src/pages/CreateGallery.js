@@ -69,7 +69,7 @@ export default function CreateGallery() {
             images: newImages
         })
     }, 
-    [newImages])
+    [newImages, newGallery])
 
     useEffect(() => {
         if(id){
@@ -82,7 +82,7 @@ export default function CreateGallery() {
             }
         }
     }, 
-    [id])
+    [id, history, retrievedGallery])
 
     const handleRemoveClick = index => {
         const list = [...newImages];

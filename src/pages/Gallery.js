@@ -98,7 +98,7 @@ export default function Gallery(){
                             {gallery.images && gallery.images.length ?
                                 gallery.images.map((image, index) => (
                                     <Carousel.Item key={image.id} interval={7000}>
-                                        <a key={index} target="_blank" href={image.url}>
+                                        <a key={index} rel="noreferrer" target="_blank" href={image.url}>
                                             <img className="d-block w-100" key={image.id} src={image.url} alt="Gallery carousel element" />
                                         </a>
                                     </Carousel.Item>

@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getGalleries, setSearchTerm, setSearchUserId } from "../store/galleries/slice";
+import { getGalleries, setSearchTerm } from "../store/galleries/slice";
 import { selectSearchTerm, selectSearchUserId, } from "../store/galleries/selectors";
 
 export default function Search() {

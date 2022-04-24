@@ -43,7 +43,7 @@ const galleriesSlice = createSlice({
             state.gallery = {...state.gallery, comments: [...state.gallery.comments, action.payload]};
         },
         setGalleryWithoutComment(state, action){
-            state.gallery = state.gallery;
+            state.gallery = action.gallery; //error
         },
         setGalleriesWithNewGallery(state, action){
             state.page.data = [...state.page.data, action.payload];
